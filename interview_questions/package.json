@@ -1,0 +1,15 @@
+{
+  "name": "interview_questions",
+  "version": "1.0.0",
+  "description": "Algorithm Practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "Sirwan Afifi <sir1afifi@gmail.com>",
+  "license": "ISC"
+}

@@ -1,0 +1,8 @@
+| Description                                                                                                                                             |      JavaScript       |                            C# |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------: | ----------------------------: |
+| The `map()` method creates a new array with the result of calling a provided function on every element in the calling array.                            |   [Array].**map()**   |    [IEnumerable].**Select()** |
+| The `forEach()` method executes a provided function once for each array element.                                                                        | [Array].**forEach()** |          [List].**ForEach()** |
+| The `filter()` method creates a new array with all elements that pass the test implemented by provided function.                                        | [Array].**filter()**  |     [IEnumerable].**Where()** |
+| The `reduce()` method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.                  | [Array].**reduce()**  | [IEnumerable].**Aggregate()** |
+| The `some()` method tests whether at least one element in the array passes the test implemented by the provided function. It returns a `Boolean` value. |  [Array].**some()**   |       [IEnumerable].**Any()** |
+| The `every()` method tests whether all elements in the array passe the test implemented by the provided function. It returns a `Boolean` value.         |  [Array].**every()**  |       [IEnumerable].**All()** |

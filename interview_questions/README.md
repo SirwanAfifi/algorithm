@@ -8,6 +8,8 @@ Whiteboarding is the best area that we should get better at. How? **Practice, Pr
 
 ## Algorithms
 
-- [Revese String](./reversestring/index.js)
-- [Palindromes](./palindrome/index.js)
-- [MaxChar](./maxchar/index.js)
+- [Revese String](./reversestring/README.md) ([code](./reversestring/index.js))
+- [Palindromes](./palindrome//README.md) ([code](./palindrome/index.js))
+- [Integer Reversal](./reverseint//README.md) ([code](./reverseint/index.js))
+- [MaxChar](./maxchar//README.md) ([code](./maxchar/index.js))
+- [The Classic FizzBuzz](./reverseint//README.md) ([code](./reverseint/index.js))

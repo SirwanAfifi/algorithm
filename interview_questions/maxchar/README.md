@@ -11,6 +11,8 @@ maxChar("apple 1231111") === "1";
 
 ## Solution:
 
+### Using `for`, `if`:
+
 1. First you should trun the input into an object (character map):
 
 ```
@@ -85,5 +87,49 @@ function maxChar(str) {
   }
 
   return maxChar;
+}
+```
+
+### Using `reduce`:
+
+1. First you should trun the input into an object (character map):
+
+```js
+const charMap = str.split("").reduce((acc, val) => {
+  if (!acc[val]) {
+    acc[val] = 1;
+  } else {
+    acc[val]++;
+  }
+  return acc;
+}, {});
+```
+
+2. Find the character that most frequently used:
+
+```js
+const result = Object.entries(charMap).reduce((prev, current) => {
+  return prev[1] > current[1] ? prev : current;
+});
+```
+
+### Full code:
+
+```js
+function maxChar(str) {
+  const charMap = str.split("").reduce((acc, val) => {
+    if (!acc[val]) {
+      acc[val] = 1;
+    } else {
+      acc[val]++;
+    }
+    return acc;
+  }, {});
+
+  const result = Object.entries(charMap).reduce((prev, current) => {
+    return prev[1] > current[1] ? prev : current;
+  });
+
+  return result[0];
 }
 ```

@@ -1,23 +1,18 @@
 function maxChar(str) {
-    const charMap = {};
-    let max = 0;
-    let maxChar = "";
-    for (let char of str) {
-        if (charMap[char]) {
-            charMap[char]++;
+    const charMap = str.split("").reduce((acc, val) => {
+        if (!acc[val]) {
+            acc[val] = 1;
         } else {
-            charMap[char] = 1;
+            acc[val]++;
         }
-    }
+        return acc;
+    }, {});
 
-    for (let char in charMap) {
-        if (charMap[char] > max) {
-            max = charMap[char];
-            maxChar = char;
-        }
-    }
+    const result = Object.entries(charMap).reduce((prev, current) => {
+        return prev[1] > current[1] ? prev : current;
+    });
 
-    return maxChar;
+    return result[0];
 }
 
 module.exports = maxChar;

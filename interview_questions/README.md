@@ -10,3 +10,4 @@ Whiteboarding is the best area that we should get better at. How? **Practice, Pr
 
 - [Revese String](./reversestring/index.js)
 - [Palindromes](./palindrome/index.js)
+- [MaxChar](./maxchar/index.js)

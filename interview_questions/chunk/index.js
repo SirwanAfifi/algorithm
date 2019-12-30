@@ -1,12 +1,10 @@
 function chunk(array, size) {
     const chunked = [];
-    let index = 0;
-
-    while (index < array.length) {
-        chunked.push(array.slice(index, index + size));
-        index += size;
-    }
-
+    const length = Math.ceil(array.length / size);
+    [...Array(length).keys()].forEach((val, i) => {
+        const start = size * i;
+        chunked.push(array.slice(start, start + size));
+    });
     return chunked;
 }
 module.exports = chunk;

@@ -22,28 +22,28 @@ Write a function that accepts a positive number N. The function should console l
 
 ## Solutions:
 
-1. Iterative
+### Iterative
 
-   1.Simple:
+1.Simple:
 
-   ```js
-   for (let i in [...Array(n)]) {
-     console.log("#".repeat(Number(i) + 1).padEnd(n, " "));
-   }
-   ```
+```js
+for (let i in [...Array(n)]) {
+  console.log("#".repeat(Number(i) + 1).padEnd(n, " "));
+}
+```
 
-   2.Hard (\*\*We figured this out by finding a pattern)
+2.Hard (\*\*We figured this out by finding a pattern)
 
-   - From 0 to n (iterate through rows)
-     - Create an empty string, `stair`
-     - From 0 to n (iterate through columns)
-     - **IF** the current column is equal to or less than the current row
-       - Add a `#` to `stair`
-   - **ELSE**
+- From 0 to n (iterate through rows)
+  - Create an empty string, `stair`
+  - From 0 to n (iterate through columns)
+  - **IF** the current column is equal to or less than the current row
+    - Add a `#` to `stair`
+- **ELSE**
 
-     - Add a space to `stair`
+  - Add a space to `stair`
 
-   - Console log `stair`
+- Console log `stair`
 
 \*\* For example for `n = 3`
 
@@ -78,7 +78,7 @@ function steps(n) {
 }
 ```
 
-2. Recursive
+### Recursive
 
 - If (row === n) then we have hit the end of our problem
 - If the `stair` string has a length === n then we are at the end of a row

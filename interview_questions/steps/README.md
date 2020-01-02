@@ -24,7 +24,7 @@ Write a function that accepts a positive number N. The function should console l
 
 1. Iterative
 
-   1. Simple:
+   1.Simple:
 
    ```js
    for (let i in [...Array(n)]) {

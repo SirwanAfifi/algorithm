@@ -17,3 +17,4 @@ Whiteboarding is the best area that we should get better at. How? **Practice, Pr
 7. [Sentence Capitalization](./capitalize/README.md) ([code](./capitalize/index.js))
 8. [Printing Steps](./steps/README.md) ([code](./steps/index.js))
 9. [Find The Vowels](./vowels/README.md) ([code](./vowels/index.js))
+10. [Enter the Matrix Spiral](./matrix/README.md) ([code](./matrix/index.js))

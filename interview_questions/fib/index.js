@@ -1,14 +1,7 @@
 function fib(n) {
-  let result = [0, 1];
+  if (n < 2) return n;
 
-  for (let i = 2; i <= n; i++) {
-    const a = result[i - 1];
-    const b = result[i - 2];
-
-    result.push(a + b);
-  }
-
-  return result[n];
+  return fib(n - 1) + fib(n - 2);
 }
 
 module.exports = fib;

@@ -18,3 +18,6 @@ Whiteboarding is the best area that we should get better at. How? **Practice, Pr
 8. [Printing Steps](./steps/README.md) ([code](./steps/index.js))
 9. [Find The Vowels](./vowels/README.md) ([code](./vowels/index.js))
 10. [Enter the Matrix Spiral](./matrix/README.md) ([code](./matrix/index.js))
+11. [Fibonacci](./fib/README.md) ([code](./fib/index.js))
+12. [The Queue](./queue/README.md) ([code](./queue/index.js))
+13. [Underwater Queue Weaving](./weave/README.md) ([code](./weave/index.js))

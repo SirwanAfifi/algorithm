@@ -27,3 +27,23 @@ q.remove(); // 'Hi'
 q.remove(); // 2
 q.remove(); // 'There'
 ```
+
+## Solution:
+
+```js
+function weave(sourceOne, sourceTwo) {
+  const q = new Queue();
+
+  while (sourceOne.peek() || sourceTwo.peek()) {
+    if (sourceOne.peek()) {
+      q.add(sourceOne.remove());
+    }
+
+    if (sourceTwo.peek()) {
+      q.add(sourceTwo.remove());
+    }
+  }
+
+  return q;
+}
+```

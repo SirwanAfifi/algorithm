@@ -72,3 +72,15 @@ class LinkedList {
   }
 }
 ```
+
+### GetFirst
+
+```js
+class LinkedList {
+  // as before
+
+  getFirst() {
+    return this.head;
+  }
+}
+```

@@ -17,3 +17,58 @@ const nodeTwo = {
 
 nodeOne.next = nodeTwo;
 ```
+
+## Node Implementation
+
+```js
+class Node {
+  constructor(data, next = null) {
+    this.data = data;
+    this.next = next;
+  }
+}
+```
+
+## Linked List Implementation
+
+```js
+class LinkedList {
+  constructor() {
+    this.head = null;
+  }
+
+  // to be added
+}
+```
+
+### InsertFirst
+
+```js
+class LinkedList {
+  // as before
+
+  insertFirst(data) {
+    this.head = new Node(data, this.head);
+  }
+}
+```
+
+### Size
+
+```js
+class LinkedList {
+  // as before
+
+  size() {
+    let counter = 0;
+    let node = this.head;
+
+    while (node) {
+      counter++;
+      node = node.next;
+    }
+
+    return counter;
+  }
+}
+```

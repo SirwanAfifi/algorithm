@@ -102,3 +102,15 @@ class LinkedList {
   }
 }
 ```
+
+### Clear
+
+```js
+class LinkedList {
+  // as before
+
+  clear() {
+    this.head = null;
+  }
+}
+```

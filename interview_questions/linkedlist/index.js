@@ -70,6 +70,15 @@ class LinkedList {
     }
     previous.next = null;
   }
+
+  insertLast(data) {
+    let last = this.getLast();
+    if (last) {
+      last.next = new Node(data);
+    } else {
+      this.head = new Node(data);
+    }
+  }
 }
 
 module.exports = { Node, LinkedList };

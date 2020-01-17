@@ -174,3 +174,25 @@ class LinkedList {
   }
 }
 ```
+
+### InsertLast
+
+```js
+class LinkedList {
+  // as before
+
+  getAt(index) {
+    let counter = 0;
+    let node = this.head;
+    while (node) {
+      if (counter === index) {
+        return node;
+      }
+
+      counter++;
+      node = node.next;
+    }
+    return null;
+  }
+}
+```

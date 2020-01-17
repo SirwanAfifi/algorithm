@@ -114,3 +114,63 @@ class LinkedList {
   }
 }
 ```
+
+### RemoveFirst
+
+```js
+class LinkedList {
+  // as before
+
+  removeFirst() {
+    if (!this.head) {
+      return;
+    }
+
+    this.head = this.head.next;
+  }
+}
+```
+
+### RemoveLast
+
+```js
+class LinkedList {
+  // as before
+
+  removeLast() {
+    if (!this.head) {
+      return;
+    }
+
+    if (!this.head.next) {
+      this.head = null;
+      return;
+    }
+
+    let previous = this.head;
+    let node = this.head.next;
+    while (node.next) {
+      previous = node;
+      node = node.next;
+    }
+    previous.next = null;
+  }
+}
+```
+
+### InsertLast
+
+```js
+class LinkedList {
+  // as before
+
+  insertLast(data) {
+    let last = this.getLast();
+    if (last) {
+      last.next = new Node(data);
+    } else {
+      this.head = new Node(data);
+    }
+  }
+}
+```

@@ -196,3 +196,50 @@ class LinkedList {
   }
 }
 ```
+
+### GetAt
+
+```js
+class LinkedList {
+  // as before
+
+  getAt(index) {
+    let counter = 0;
+    let node = this.head;
+    while (node) {
+      if (counter === index) {
+        return node;
+      }
+
+      counter++;
+      node = node.next;
+    }
+    return null;
+  }
+}
+```
+
+### RemoveAt
+
+```js
+class LinkedList {
+  // as before
+
+  removeAt(index) {
+    if (!this.head) {
+      return;
+    }
+
+    if (index === 0) {
+      this.head = this.head.next;
+      return;
+    }
+
+    const previous = this.getAt(index - 1);
+    if (!previous || !previous.next) {
+      return;
+    }
+    previous.next = previous.next.next;
+  }
+}
+```

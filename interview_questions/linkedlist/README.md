@@ -267,3 +267,37 @@ class LinkedList {
   }
 }
 ```
+
+### forEach
+
+```js
+class LinkedList {
+  // as before
+
+  forEach(fn) {
+    let node = this.head;
+    let counter = 0;
+    while (node) {
+      fn(node, counter);
+      node = node.next;
+      counter++;
+    }
+  }
+}
+```
+
+### Linked Lists with Iterators
+
+```js
+class LinkedList {
+  // as before
+
+  *[Symbol.iterator]() {
+    let node = this.head;
+    while (node) {
+      yield node;
+      node = node.next;
+    }
+  }
+}
+```

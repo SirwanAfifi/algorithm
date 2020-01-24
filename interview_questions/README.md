@@ -23,3 +23,4 @@ Whiteboarding is the best area that we should get better at. How? **Practice, Pr
 13. [Underwater Queue Weaving](./weave/README.md) ([code](./weave/index.js))
 14. [Stack Em Up With Stacks](./stack/README.md) ([code](./stack/index.js))
 15. [Linked Lists](./linkedlist/README.md) ([code](./linkedlist/index.js))
+16. [Find the Midpoint](./midpoint/README.md) ([code](./midpoint/index.js))

@@ -24,3 +24,4 @@ Whiteboarding is the best area that we should get better at. How? **Practice, Pr
 14. [Stack Em Up With Stacks](./stack/README.md) ([code](./stack/index.js))
 15. [Linked Lists](./linkedlist/README.md) ([code](./linkedlist/index.js))
 16. [Find the Midpoint](./midpoint/README.md) ([code](./midpoint/index.js))
+17. [Step Back From the Tail](./fromlast/README.md) ([code](./fromlast/index.js))

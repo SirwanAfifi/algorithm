@@ -12,6 +12,23 @@ class Node {
     this.children = this.children.filter(n => n.data !== data);
   }
 }
-class Tree {}
+
+class Tree {
+  constructor(root = null) {
+    this.root = root;
+  }
+
+  traverseBF(fn) {
+    const arr = [this.root];
+    while (arr.length) {
+      const node = arr.shift();
+
+      arr.push(...node.children);
+      fn(node);
+    }
+  }
+
+  traverseDF() {}
+}
 
 module.exports = { Node, Tree };

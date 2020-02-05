@@ -12,5 +12,12 @@
     $("button").on("click", () => {
       console.log("Hello");
     });
+    $("button").on("click", () => {
+      console.log("There!");
+    });
+
+    $("button").trigger("click");
+
+    $("button").off("click");
   </script>
 </body>

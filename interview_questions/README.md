@@ -28,3 +28,4 @@ Whiteboarding is the best area that we should get better at. How? **Practice, Pr
 18. [Building a Tree](./tree/README.md) ([code](./tree/index.js))
 19. [Tree Width with Level Width](./levelwidth/README.md) ([code](./levelwidth/index.js))
 20. [My Best Friend Binary Search Trees](./bst/README.md) ([code](./bst/index.js))
+21. [Back to JavaScript - Events](./events/README.md) ([code](./events/index.js))

@@ -11,7 +11,23 @@ function bubbleSort(arr) {
   return arr;
 }
 
-function selectionSort(arr) {}
+function selectionSort(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    let indeOfMin = i;
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[j] < arr[indeOfMin]) {
+        indeOfMin = j;
+      }
+    }
+
+    if (indeOfMin !== i) {
+      const lesser = arr[indeOfMin];
+      arr[indeOfMin] = arr[i];
+      arr[i] = lesser;
+    }
+  }
+  return arr;
+}
 
 function mergeSort(arr) {}
 

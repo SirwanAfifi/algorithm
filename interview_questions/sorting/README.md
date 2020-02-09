@@ -58,3 +58,18 @@ function selectionSort(arr) {
   return arr;
 }
 ```
+
+### mergeSort
+
+- Create `results` array
+- While there are still elements in both arrays
+  - If the first element the left half is less than first in right half
+    - `shift` the element from left into `results` arr
+  - else
+    - `shift` the element from right into `results` arr
+- Take everything from the array that still has stuff in it and put it in `results`
+
+### Solution
+
+```js
+```
